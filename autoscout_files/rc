@@ -1,0 +1,1 @@
+var nugg4adtech = new Image();nugg4adtech.src = 'http://adserver.adtech.de/bind?ckey1=ngg4om;cvalue1=11223444113444499990000001000010099499994994919499999999999999999999992149163619999999999199999;expiresDays=90;adct=image/gif';var nugg4pub = new Image();nugg4pub.src ='http://aud.pubmatic.com/AdServer/Artemis?dpid=43&segid=1,2,3,6';

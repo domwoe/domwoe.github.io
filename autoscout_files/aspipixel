@@ -1,0 +1,23 @@
+
+function aspiInjectPx(url,si) {
+	var scr = screen.width + 'x' + screen.height;
+	var win = document.body.clientWidth + 'x' + document.body.clientHeight;
+	var br = escape(navigator.appName + '+' + navigator.appVersion);
+	var os = navigator.platform;
+	var lng = navigator.systemLanguage + '+' + navigator.userLanguage;
+	var cpu = navigator.cpuClass;
+	var statPix = document.createElement('img');
+	statPix.src = url + '?si=' + si + '&scr=' + scr + '+' + win + '&br=' + br + '&os=' + os + '&lng=' + lng + '&cpu=' + cpu;
+	if(typeof($) != 'undefined' && typeof($.ajax) == 'function') {
+		$.ajax({
+			type: 'POST',
+			url: url + '?si=' + si,
+			contentType: 'application/json; charset=utf-8',
+			data: {},
+			dataType: 'json',
+			cache: false,
+			success: function (data) {},
+			error: function (msg) {}
+		});
+	}
+}
