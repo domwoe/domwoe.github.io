@@ -71,7 +71,7 @@ $(document).ready(function() {
             annotations.push({
                 series: "Odometer",
                 x: yyyy + "-" + mms + "-01",
-                icon: "haken.png",
+                icon: "./autoscout_files/haken.png",
                 width: 20,
                 height: 20,
                 tickHeight: 0
