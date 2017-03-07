@@ -48,7 +48,7 @@ $(document).ready(function() {
            },
            yAxis: { //--- Primary yAxis
                title: {
-                   text: 'Kilomterstand'
+                   text: 'Kilometerstand'
                }
            },
            labels: {
