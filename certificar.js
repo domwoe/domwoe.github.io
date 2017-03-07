@@ -36,7 +36,7 @@ $(document).ready(function() {
 
             $.get('odometer.csv', function(csv) {
 
-            Highcharts.chart('odometer', {
+            Highcharts.chart('odometerhist', {
             chart: {
                 type: 'areaspline'
             },
