@@ -11,14 +11,27 @@ $(document).ready(function() {
             .modal('show');
     });
 
-    $("#certificar").click(function() {
+
+        $("#certificar").click(function() {
+            // new Custombox.modal({
+            //     content: {
+            //         effect: 'fadein',
+            //         target: '#modal'
+            //     }
+            // }).open();
+            $('#certificarmodal')
+                .modal('show');
+        });
+
+
+    $("#odometer").click(function() {
         // new Custombox.modal({
         //     content: {
         //         effect: 'fadein',
         //         target: '#modal'
         //     }
         // }).open();
-        $('#certificarmodal')
+        $('#odometermodal')
             .modal('show');
 
             $.get('odometer.csv', function(csv) {
