@@ -51,6 +51,18 @@ $(document).ready(function() {
                    text: 'Kilomterstand'
                }
            },
+           labels: {
+             useHTML: true,
+                 formatter: function() {
+                   console.log(this.value);
+                     if(this.value == "Jun")
+                         return '<img src="http://www.highcharts.com/demo/gfx/sun.png" style="width: 30px; vertical-align: middle" />'+this.value;
+                     else if(this.value == "Dec")
+                          return '<img src="http://www.highcharts.com/demo/gfx/snow.png" style="width: 30px; vertical-align: middle" />'+this.value;
+                     else
+                         return this.value;
+                 }
+},
            legend: {
              enabled: false
            },

@@ -402,14 +402,14 @@
                                                 </span>
                                             </div>
                                         </li>
-                                        <li class="textlist-item">
+                                        <!-- <li class="textlist-item">
                                             <div class="prop">
                                                 Scheckheftgepflegt
                                             </div>
                                             <div class="value">
                                                 Ja <img id="scheckheft" src="check.png" width="20">
                                             </div>
-                                        </li>
+                                        </li> -->
                                         <li class="textlist-item">
                                             <div class="prop">
                                                 Neupreis
@@ -967,7 +967,7 @@
   <div id="certificarmodal" class="ui long modal" style="height:400px;width:600px">
   <i class="close icon"></i>
   <h3 class="ui header">
-  <img class="ui small image" src="certificar.png">
+  <img class="ui tiny image" src="certificar.png" style="margin-bottom:10px;margin-top:10px">
   <div class="content">
     Kilometerstand-Garantie
   </div>
@@ -979,10 +979,18 @@
     <img src="tuv.jpg" class="right">
   </div> -->
   <div class="content">
-   <p>Letzter verifizierter Kilometerstand: <b>16'102 km</b> <br/> <small>(15.03.2017)</small></p>
-  <div class="ui header">
-  Historie
-  </div>
+    <div class="ui grid">
+        <div class="two column row">
+        <div class="column">
+          Letzter verifizierter Kilometerstand
+        </div>
+        <div class="column">
+          <b>16'102 km</b> <small>(15.03.2017)</small>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <h5>Kilometerhistorie</h5>
   <div id="odometer" align="center" class="image content" style="height:300px;width:500px">
    <!-- <div id="odometer"></div> -->
     </div>
