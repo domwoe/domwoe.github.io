@@ -11,6 +11,18 @@ $(document).ready(function() {
             .modal('show');
     });
 
+    $("#battery").click(function() {
+        // new Custombox.modal({
+        //     content: {
+        //         effect: 'fadein',
+        //         target: '#modal'
+        //     }
+        // }).open();
+        console.log('open battery modal');
+        $('#batterymodal')
+            .modal('show');
+    });
+
 
         $("#certificar").click(function() {
             // new Custombox.modal({
@@ -38,7 +50,8 @@ $(document).ready(function() {
 
             Highcharts.chart('odometerhist', {
             chart: {
-                type: 'areaspline'
+                type: 'areaspline',
+                animation: false
             },
             title: {
               text: ""

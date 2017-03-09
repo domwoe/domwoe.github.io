@@ -11410,7 +11410,7 @@ img.ui.bordered.image {
 .ui.mini.images img,
 .ui.mini.images svg,
 .ui.mini.image {
-  width: 35px;
+  width: 45px;
   height: auto;
   font-size: 0.78571429rem;
 }
@@ -11419,7 +11419,7 @@ img.ui.bordered.image {
 .ui.tiny.images img,
 .ui.tiny.images svg,
 .ui.tiny.image {
-  width: 45px;
+  width: 60px;
   height: auto;
   font-size: 0.85714286rem;
 }

@@ -349,6 +349,14 @@
                                         </li>
                                         <li class="textlist-item">
                                             <div class="prop">
+                                                Batteriegesundheit
+                                            </div>
+                                            <div class="value">
+                                                100 % <img id="battery" src="check.png" width="20">
+                                            </div>
+                                        </li>
+                                        <li class="textlist-item">
+                                            <div class="prop">
                                                 Stromverbrauch (kWh / 100 km)
                                             </div>
                                             <div class="value">
@@ -389,17 +397,11 @@
                                         </li>
                                         <li class="textlist-item">
                                             <div class="prop">
-                                                Ab MFK
+                                                Scheckheft
                                             </div>
                                             <div class="value">
-                                                Nein
-                                                <span class="tooltip wide help es">
-                <span class="tooltip-container">
-                    <span class="content">
-                        Die n&#228;chste Motorfahrzeugkontrolle (MFK) dieses Fahrzeugs ist fr&#252;hestens in 1 Jahr f&#228;llig. (Sch&#228;tzung nach Inverkehrsetzungsdatum – fragen Sie sicherheitshalber den Anbieter.)
-                    </span>
-                                                </span>
-                                                </span>
+                                                Ja <img id="scheckheft" src="check.png" width="20">
+
                                             </div>
                                         </li>
                                         <!-- <li class="textlist-item">
@@ -965,7 +967,7 @@
       Die CertifiCar-Garantie
     </div>
     <img class="ui small right floated image" src="Bosch-LifeClip-DE-RGB-Right.png">
-    <img class="ui tiny right floated image" src="tuvzert.png">
+    <img class="ui mini right floated image" src="tuvzert.png">
     </h3>
     <!-- <div class="header">
       Certificar
@@ -973,7 +975,7 @@
     </div> -->
     <div class="content">
       <p><b>CertifiCar bietet datengetriebene Echtzeitzertifikate.</b></p>
-      <p> Damit k&ouml;nnen Sie sicher sein, dass Daten nicht nachtr&auml;glich manipuliert wurden. Somit haben Sie mehr Sicherheit beim Gebrauchtwagenkauf. Die Datenquellen werden in Zusammenarbeit mit dem <b>T&Uuml;V Rheinland</b> zertifiziert. Die Datenintegrit&auml;t wird durch Blockchain Technologie gew&auml;hrleistet</p>
+      <p> Damit k&ouml;nnen Sie sicher sein, dass Daten nicht nachtr&auml;glich manipuliert wurden. Somit haben Sie mehr Sicherheit beim Gebrauchtwagenkauf. Die Datenquellen werden in Zusammenarbeit mit dem <b>T&Uuml;V Rheinland</b> zertifiziert. Die Datenintegrit&auml;t wird durch <b>Blockchain Technologie</b> gew&auml;hrleistet</p>
       <p>Daten mit CertifiCar Garantie werden durch das <span><img src="check.png" width="20"></span> Symbol gekennzeichnet.</p>
       <p>F&uuml;r mehr Informationen können Sie auf das jeweilige <span><img src="check.png" width="20"></span> Symbol klicken. </p>
     </div>
@@ -981,15 +983,14 @@
     </div>
 
 
-    <div id="odometermodal" class="ui long modal" style="height:400px;width:600px">
+    <div id="odometermodal" class="ui long modal" style="height:580px;width:525px">
     <i class="close icon"></i>
     <h3 class="ui header">
     <img class="ui tiny image" src="certificar.png" style="margin-bottom:10px;margin-top:10px">
     <div class="content">
-      Kilometerstand-Garantie
+      Kilometerstand
     </div>
-    <img class="ui small right floated image" src="Bosch-LifeClip-DE-RGB-Right.png">
-    <img class="ui tiny right floated image" src="tuvzert.png">
+
     </h3>
     <!-- <div class="header">
       Certificar
@@ -1008,23 +1009,63 @@
       </div>
       <div class="ui divider"></div>
       <h5>Kilometerhistorie</h5>
-    <div id="odometerhist" align="center" class="image content" style="height:300px;width:500px">
+    <div id="odometerhist" align="center" class="image content" style="height:300px;width:460px">
      <!-- <div id="odometer"></div> -->
       </div>
+
+
     </div>
+    <div class="ui footer">
+
+      <img class="ui small right floated image" src="Bosch-LifeClip-DE-RGB-Bottom.png">
+      <img class="ui tiny right floated image" src="tuvzert.png">
+    </div>
+
       <!-- <div class="ui green ok inverted button center">Alles klar!</div> -->
     </div>
 
 
-<div id="scheckmodal" class="ui long modal" style="height:400px;width:600px">
+
+    <div id="batterymodal" class="ui long modal" style="height:210px;width:400px">
+      <i class="close icon"></i>
+      <h3 class="ui header">
+        <img class="ui tiny image" src="certificar.png">
+        <div class="content">
+          Batteriegesundheit
+        </div>
+    </h3>
+      <!-- <div class="header">
+        Certificar
+        <img src="tuv.jpg" class="right">
+      </div> -->
+      <div class="content">
+        <div class="ui grid">
+            <div class="two column row">
+            <div class="column">
+              Letzte verifizierte Batteriegesundheit
+            </div>
+            <div class="column">
+              <b>100 %</b> <small>(15.03.2017)</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="ui footer">
+
+        <img class="ui small right floated image" src="Bosch-LifeClip-DE-RGB-Bottom.png">
+        <img class="ui tiny right floated image" src="tuvzert.png">
+      </div>
+    </div>
+
+
+<div id="scheckmodal" class="ui long modal" style="height:560px;width:525px">
   <i class="close icon"></i>
   <h3 class="ui header">
-    <img class="ui small image" src="certificar.png">
+    <img class="ui tiny image" src="certificar.png">
     <div class="content">
-      Service-Garantie
+      Scheckheft
     </div>
-    <img class="ui small right floated image" src="Bosch-LifeClip-DE-RGB-Right.png">
-    <img class="ui tiny right floated image" src="tuvzert.png">
 </h3>
   <!-- <div class="header">
     Certificar
@@ -1032,9 +1073,10 @@
   </div> -->
   <div class="content">
 <div class="ui grid">
+  <h5>Service</h5>
     <div class="two column row">
     <div class="column">
-      Letzter Service:
+      Letzter Service
     </div>
     <div class="column">
       keiner
@@ -1042,24 +1084,53 @@
   </div>
   <div class="two column row">
   <div class="column">
-    Nächster Service:
+    Nächster Service
   </div>
   <div class="column">
-    in 10'000 km
+    in 13'898 km
   </div>
+</div>
+<h5>Motorfahrzeugkontrolle (MFK)</h5>
+<div class="two column row">
+<div class="column">
+  Letzte MFK
+</div>
+<div class="column">
+  keine
+</div>
 </div>
 <div class="two column row">
 <div class="column">
-  Letzte :
+  Nächste MFK
 </div>
 <div class="column">
-  in 10'000 km
+  01/2020
 </div>
+</div>
+<h5>Reparaturen</h5>
+<div class="two column row">
+<div class="column">
+  15. März 2017
+</div>
+<div class="column">
+  Reparatur Seitenscheibe
+</div>
+</div>
+<div class="two column row">
+<div class="column">
+  15. März 2017
+</div>
+<div class="column">
+  Austausch Klimakompressor <br>
 </div>
 </div>
 
+</div>
 
-   <p>Reperaturen</p>
+
+<img class="ui small right floated image" src="Bosch-LifeClip-DE-RGB-Bottom.png">
+<img class="ui tiny right floated image" src="tuvzert.png">
+
 
     <!-- <div class="ui green ok inverted button center">Alles klar!</div> -->
 </div>
