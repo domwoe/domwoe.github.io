@@ -74,7 +74,7 @@ $(document).ready(function() {
            },
            yAxis: { //--- Primary yAxis
                title: {
-                   text: 'Kilometerstand'
+                   text: 'Odometer'
                }
            },
            labels: {
