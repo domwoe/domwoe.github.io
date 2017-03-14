@@ -101,7 +101,7 @@ $(document).ready(function() {
     // },
            series: [{
                type: 'areaspline',
-               color: '#1fa8b0'
+               color: '#4990e2'
    }]
         });
       });
